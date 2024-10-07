@@ -15,13 +15,13 @@
     <arg name="respawn_controller"    default="false"/>
 
     <!-- this should be only called once on multi-robot simulation -->
-    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <!-- <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="world_name" value="$(arg gazebo_world)"/>
         <arg name="gui" value="$(arg gui)" />
         <arg name="paused" value="$(arg paused)"/>
         <arg name="use_sim_time" value="true"/>
         <arg name="headless" value="$(arg headless)"/>
-    </include>
+    </include> -->
 
     <group ns="$(arg robot_name)">
         <node  name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg robot_name)  

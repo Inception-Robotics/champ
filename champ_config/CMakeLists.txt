@@ -5,6 +5,6 @@ find_package(catkin REQUIRED COMPONENTS)
 
 catkin_package()
 
-install(DIRECTORY config launch maps worlds
+install(DIRECTORY config launch maps worlds models meshes
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
